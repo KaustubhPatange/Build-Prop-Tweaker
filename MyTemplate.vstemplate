@@ -1,18 +1,18 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
-    <Name>Build Prop Tweaker</Name>
-    <Description>Build Prop Tweaker for PC</Description>
+    <Name>Build Prop Tool</Name>
+    <Description>A Cool Build Prop Tweaker with very good interface and tweaks </Description>
     <ProjectType>VisualBasic</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
-    <DefaultName>Build Prop Tweaker</DefaultName>
+    <DefaultName>Build Prop Tool</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
-    <Icon>__TemplateIcon.png</Icon>
-    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Icon>__TemplateIcon.ico</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="Build Prop Tool.vbproj" File="Build Prop Tool.vbproj" ReplaceParameters="true">
@@ -20,6 +20,11 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="About.Designer.vb">About.Designer.vb</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="About.resx">About.resx</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
+      <Folder Name="bin" TargetFolderName="bin">
+        <Folder Name="Debug" TargetFolderName="Debug">
+          <ProjectItem ReplaceParameters="false" TargetFileName="7z.dll">7z.dll</ProjectItem>
+        </Folder>
+      </Folder>
       <ProjectItem ReplaceParameters="false" TargetFileName="build-prop-editor.ico">build-prop-editor.ico</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Form1.vb">Form1.vb</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Form1.Designer.vb">Form1.Designer.vb</ProjectItem>
@@ -34,8 +39,25 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.vb">Settings.Designer.vb</ProjectItem>
       </Folder>
       <Folder Name="Resources" TargetFolderName="Resources">
+        <ProjectItem ReplaceParameters="false" TargetFileName="14575.png">14575.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="7z.dll">7z.dll</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="7za.exe">7za.exe</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="circle-with-i-1.png">circle-with-i-1.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="contacts-xxl.png">contacts-xxl.png</ProjectItem>
         <ProjectItem ReplaceParameters="false" TargetFileName="demo.zip">demo.zip</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="down-icon.png">down-icon.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="find.png">find.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="goto.png">goto.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="redo.png">redo.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="replace.png">replace.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="replace1.png">replace1.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Save-icon.png">Save-icon.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="save.png">save.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="undo.ico">undo.ico</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="undo.png">undo.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="unsave.png">unsave.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="up-icon.png">up-icon.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="zip1.png">zip1.png</ProjectItem>
       </Folder>
     </Project>
   </TemplateContent>

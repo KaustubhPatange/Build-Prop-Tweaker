@@ -13,6 +13,7 @@
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -23,6 +24,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>Prop-Tweaker.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +35,7 @@
     <OutputPath>bin\Release\</OutputPath>
     <DocumentationFile>Prop-Tweaker.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -52,6 +55,9 @@
   <ItemGroup>
     <Reference Include="AndroidLib">
       <HintPath>..\..\Le-ECO-ToolFinal\Le-ECO-ToolFinal\bin\Debug\AndroidLib.dll</HintPath>
+    </Reference>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\..\..\..\Libraries\FastColoredTextBox.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -135,6 +141,24 @@
     <None Include="Resources\demo.zip" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\down-icon.png" />
+    <None Include="Resources\up-icon.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\replace1.png" />
+    <None Include="Resources\undo.ico" />
+    <None Include="Resources\goto.png" />
+    <None Include="Resources\redo.png" />
+    <None Include="Resources\replace.png" />
+    <None Include="Resources\find.png" />
+    <None Include="Resources\zip1.png" />
+    <None Include="Resources\contacts-xxl.png" />
+    <None Include="Resources\circle-with-i-1.png" />
+    <None Include="Resources\14575.png" />
+    <Content Include="Resources\7z.dll" />
+    <None Include="Resources\unsave.png" />
+    <None Include="Resources\Save-icon.png" />
+    <None Include="Resources\save.png" />
+    <None Include="bin\Debug\7z.dll" />
     <Content Include="build-prop-editor.ico" />
     <None Include="Resources\7za.exe" />
   </ItemGroup>

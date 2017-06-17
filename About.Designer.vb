@@ -30,10 +30,12 @@ Partial Class About
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel5 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -81,12 +83,13 @@ Partial Class About
         '
         Me.GroupBox1.Controls.Add(Me.LinkLabel4)
         Me.GroupBox1.Controls.Add(Me.LinkLabel3)
+        Me.GroupBox1.Controls.Add(Me.LinkLabel5)
         Me.GroupBox1.Controls.Add(Me.LinkLabel2)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.LinkLabel1)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 87)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(134, 147)
+        Me.GroupBox1.Size = New System.Drawing.Size(134, 168)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         '
@@ -94,7 +97,7 @@ Partial Class About
         '
         Me.LinkLabel4.AutoSize = True
         Me.LinkLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel4.Location = New System.Drawing.Point(6, 116)
+        Me.LinkLabel4.Location = New System.Drawing.Point(10, 138)
         Me.LinkLabel4.Name = "LinkLabel4"
         Me.LinkLabel4.Size = New System.Drawing.Size(63, 13)
         Me.LinkLabel4.TabIndex = 6
@@ -112,6 +115,17 @@ Partial Class About
         Me.LinkLabel3.TabStop = True
         Me.LinkLabel3.Text = "~ Google and XDA"
         '
+        'LinkLabel5
+        '
+        Me.LinkLabel5.AutoSize = True
+        Me.LinkLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel5.Location = New System.Drawing.Point(10, 114)
+        Me.LinkLabel5.Name = "LinkLabel5"
+        Me.LinkLabel5.Size = New System.Drawing.Size(95, 13)
+        Me.LinkLabel5.TabIndex = 7
+        Me.LinkLabel5.TabStop = True
+        Me.LinkLabel5.Text = "~ PavelTorgashov"
+        '
         'LinkLabel2
         '
         Me.LinkLabel2.AutoSize = True
@@ -126,7 +140,7 @@ Partial Class About
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(152, 116)
+        Me.Label4.Location = New System.Drawing.Point(150, 96)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(152, 26)
         Me.Label4.TabIndex = 5
@@ -137,7 +151,7 @@ Partial Class About
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(150, 177)
+        Me.Label5.Location = New System.Drawing.Point(152, 129)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(154, 26)
         Me.Label5.TabIndex = 6
@@ -150,9 +164,21 @@ Partial Class About
         Me.Label6.Font = New System.Drawing.Font("Oswald", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(237, 245)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(54, 16)
+        Me.Label6.Size = New System.Drawing.Size(56, 16)
         Me.Label6.TabIndex = 7
-        Me.Label6.Text = "Version 1.0"
+        Me.Label6.Text = "Version 2.0"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.ForeColor = System.Drawing.Color.Purple
+        Me.Label7.Location = New System.Drawing.Point(148, 164)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(160, 52)
+        Me.Label7.TabIndex = 8
+        Me.Label7.Text = "Toolkit devs are free to integrate" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "this stuff into your project. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "But make sure" &
+    " you should credit" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " me properly :p"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'About
         '
@@ -160,6 +186,7 @@ Partial Class About
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ClientSize = New System.Drawing.Size(309, 267)
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -191,4 +218,6 @@ Partial Class About
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents LinkLabel5 As LinkLabel
+    Friend WithEvents Label7 As Label
 End Class

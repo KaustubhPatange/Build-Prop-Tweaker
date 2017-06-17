@@ -8,6 +8,10 @@
     End Sub
 
     Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
-        Process.Start("developerkp.capstricks.net")
+        Process.Start("https://developerkp.capstricks.net")
+    End Sub
+
+    Private Sub LinkLabel5_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel5.LinkClicked
+        Process.Start("https://github.com/PavelTorgashov")
     End Sub
 End Class
